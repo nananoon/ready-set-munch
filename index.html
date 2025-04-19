@@ -2,75 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ready, Set, Munch!</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <!-- Main container that will be present on all pages -->
+  <div class="container" id="mainContainer">
     <header>
       <h1>Ready, Set, Munch!</h1>
-      <p>Welcome to your personal culinary compass. You’re just a few gut feelings away from your perfect bite!</p>
-      <p><strong>Ready?</strong></p>
+      <p>Welcome to your personal culinary compass. You're just a few gut feelings away from your perfect bite!</p>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
     </header>
 
-    <form id="munchQuiz">
-
-      <aside class="question">
-            <h2>What kind of day are you having?</h2>
-            <label><input type="radio" name="q1" value="Gahwa"> I want to feel cozy and safe.</label><br>
-            <label><input type="radio" name="q1" value="spicy"> I’m craving chaos and spice.</label><br>
-            <label><input type="radio" name="q1" value="fuel"> I’m focused, just need fuel.</label><br>
-            <label><input type="radio" name="q1" value="refreshing"> I need something refreshing and uplifting.</label>
-      </aside>
-
-      <aside class="question">
-        <h2>If your craving had a flavor what would it be?</h2>
-        <label><input type="radio" name="q2" value="soupy"> 🍜 = “Warm and soupy”</label><br>
-        <label><input type="radio" name="q2" value="spicy"> 🌶️ = “Spicy and bold”</label><br>
-        <label><input type="radio" name="q2" value="sweet"> 🧁 = “Sweet treat, please”</label><br>
-        <label><input type="radio" name="q2" value="fresh"> 🌿 = “Fresh and light”</label>
-      </aside>
-
-      <aside class="question">
-        <h2>Which visual matches your food vibe today?</h2>
-        <label><input type="radio" name="q3" value="street"> A neon-lit street food stall</label><br>
-        <label><input type="radio" name="q3" value="ramen"> A candle-lit ramen bar</label><br>
-        <label><input type="radio" name="q3" value="cafe"> A cafe with live music</label><br>
-        <label><input type="radio" name="q3" value="picnic"> A picnic with trees overhead</label>
-      </aside>
-
-      <aside class="question">
-        <h2>Who’s joining you?</h2>
-        <label><input type="radio" name="q4" value="solo"> Just me</label><br>
-        <label><input type="radio" name="q4" value="date"> A date</label><br>
-        <label><input type="radio" name="q4" value="friends"> A couple of friends</label><br>
-        <label><input type="radio" name="q4" value="family"> My family</label>
-      </aside>
-
-      <aside class="question">
-        <h2>How much would your experience be worth?</h2>
-        <label><input type="radio" name="q5" value="cheap"> Under $15</label><br>
-        <label><input type="radio" name="q5" value="mid"> $15-$25</label><br>
-        <label><input type="radio" name="q5" value="fancy"> $25–$50</label>
-      </aside>
-
-      <aside class="question">
-        <h2>Reveal Your Munch Match!</h2>
-        <input type="submit" value="Munch Reveal">
-      </aside>
-
-      <div id="result" class="result"></div>
-
-      <aside class="question">
-        <h2>I would like another recommendation!</h2>
-        <input type="submit" value="Another Recommendation">
-      </aside>
-    </form>
+    <div id="pageContent"></div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
